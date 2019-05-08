@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		234EF924227B680C0027A677 /* SingletonPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EF923227B680C0027A677 /* SingletonPatternViewController.swift */; };
 		234EF926227B684E0027A677 /* PreferencesSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EF925227B684E0027A677 /* PreferencesSingleton.swift */; };
+		2387E10D22836F4D006D8242 /* MementoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2387E10C22836F4D006D8242 /* MementoProtocol.swift */; };
+		2387E10F228371DA006D8242 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2387E10E228371DA006D8242 /* User.swift */; };
+		2387E11122837C41006D8242 /* MementoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2387E11022837C41006D8242 /* MementoViewController.swift */; };
 		23EA160B2279E4CC00A52600 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA160A2279E4CC00A52600 /* AppDelegate.swift */; };
 		23EA160D2279E4CC00A52600 /* FactoryPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA160C2279E4CC00A52600 /* FactoryPatternViewController.swift */; };
 		23EA16102279E4CC00A52600 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EA160E2279E4CC00A52600 /* Main.storyboard */; };
 		23EA16122279E4CD00A52600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EA16112279E4CD00A52600 /* Assets.xcassets */; };
 		23EA16152279E4CD00A52600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EA16132279E4CD00A52600 /* LaunchScreen.storyboard */; };
 		23EA161D2279E6CD00A52600 /* ShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA161C2279E6CD00A52600 /* ShapeFactory.swift */; };
-		23F513F722822A6D008B84C6 /* ObserverTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513F622822A6D008B84C6 /* ObserverTemplate.swift */; };
+		23F513F722822A6D008B84C6 /* ObserverInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513F622822A6D008B84C6 /* ObserverInterface.swift */; };
 		23F513F922822A8C008B84C6 /* ObserverPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513F822822A8C008B84C6 /* ObserverPatternViewController.swift */; };
 		23F513FB228230DD008B84C6 /* NetworkConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513FA228230DD008B84C6 /* NetworkConnectionHandler.swift */; };
-		23F513FD2282348B008B84C6 /* ObservedObjectTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513FC2282348B008B84C6 /* ObservedObjectTemplate.swift */; };
+		23F513FD2282348B008B84C6 /* ObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513FC2282348B008B84C6 /* ObservedObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		234EF923227B680C0027A677 /* SingletonPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonPatternViewController.swift; sourceTree = "<group>"; };
 		234EF925227B684E0027A677 /* PreferencesSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesSingleton.swift; sourceTree = "<group>"; };
+		2387E10C22836F4D006D8242 /* MementoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoProtocol.swift; sourceTree = "<group>"; };
+		2387E10E228371DA006D8242 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2387E11022837C41006D8242 /* MementoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoViewController.swift; sourceTree = "<group>"; };
 		23EA16072279E4CC00A52600 /* DesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23EA160A2279E4CC00A52600 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23EA160C2279E4CC00A52600 /* FactoryPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryPatternViewController.swift; sourceTree = "<group>"; };
@@ -32,10 +38,10 @@
 		23EA16142279E4CD00A52600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23EA16162279E4CD00A52600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23EA161C2279E6CD00A52600 /* ShapeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeFactory.swift; sourceTree = "<group>"; };
-		23F513F622822A6D008B84C6 /* ObserverTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverTemplate.swift; sourceTree = "<group>"; };
+		23F513F622822A6D008B84C6 /* ObserverInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverInterface.swift; sourceTree = "<group>"; };
 		23F513F822822A8C008B84C6 /* ObserverPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPatternViewController.swift; sourceTree = "<group>"; };
 		23F513FA228230DD008B84C6 /* NetworkConnectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionHandler.swift; sourceTree = "<group>"; };
-		23F513FC2282348B008B84C6 /* ObservedObjectTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectTemplate.swift; sourceTree = "<group>"; };
+		23F513FC2282348B008B84C6 /* ObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,16 @@
 				234EF923227B680C0027A677 /* SingletonPatternViewController.swift */,
 			);
 			path = "Singleton Pattern";
+			sourceTree = "<group>";
+		};
+		2387E10B22836F35006D8242 /* Memento Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				2387E10C22836F4D006D8242 /* MementoProtocol.swift */,
+				2387E10E228371DA006D8242 /* User.swift */,
+				2387E11022837C41006D8242 /* MementoViewController.swift */,
+			);
+			path = "Memento Pattern";
 			sourceTree = "<group>";
 		};
 		23AA781A227A4C6100A1F486 /* Factory Design Pattern */ = {
@@ -96,6 +112,7 @@
 		23EA16092279E4CC00A52600 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				2387E10B22836F35006D8242 /* Memento Pattern */,
 				23F513F522822A56008B84C6 /* Observer Pattern */,
 				234EF922227B67DD0027A677 /* Singleton Pattern */,
 				23AA781A227A4C6100A1F486 /* Factory Design Pattern */,
@@ -109,8 +126,8 @@
 		23F513F522822A56008B84C6 /* Observer Pattern */ = {
 			isa = PBXGroup;
 			children = (
-				23F513F622822A6D008B84C6 /* ObserverTemplate.swift */,
-				23F513FC2282348B008B84C6 /* ObservedObjectTemplate.swift */,
+				23F513F622822A6D008B84C6 /* ObserverInterface.swift */,
+				23F513FC2282348B008B84C6 /* ObservedObject.swift */,
 				23F513FA228230DD008B84C6 /* NetworkConnectionHandler.swift */,
 				23F513F822822A8C008B84C6 /* ObserverPatternViewController.swift */,
 			);
@@ -188,15 +205,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23F513F722822A6D008B84C6 /* ObserverTemplate.swift in Sources */,
+				23F513F722822A6D008B84C6 /* ObserverInterface.swift in Sources */,
 				23F513FB228230DD008B84C6 /* NetworkConnectionHandler.swift in Sources */,
-				23F513FD2282348B008B84C6 /* ObservedObjectTemplate.swift in Sources */,
+				23F513FD2282348B008B84C6 /* ObservedObject.swift in Sources */,
 				23F513F922822A8C008B84C6 /* ObserverPatternViewController.swift in Sources */,
 				23EA161D2279E6CD00A52600 /* ShapeFactory.swift in Sources */,
 				23EA160D2279E4CC00A52600 /* FactoryPatternViewController.swift in Sources */,
+				2387E11122837C41006D8242 /* MementoViewController.swift in Sources */,
 				23EA160B2279E4CC00A52600 /* AppDelegate.swift in Sources */,
 				234EF926227B684E0027A677 /* PreferencesSingleton.swift in Sources */,
 				234EF924227B680C0027A677 /* SingletonPatternViewController.swift in Sources */,
+				2387E10D22836F4D006D8242 /* MementoProtocol.swift in Sources */,
+				2387E10F228371DA006D8242 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
