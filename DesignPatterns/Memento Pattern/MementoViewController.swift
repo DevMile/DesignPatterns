@@ -4,7 +4,7 @@
 //
 //  Created by Milan Bojic on 5/8/19.
 //  Copyright © 2019 Milan Bojic. All rights reserved.
-//
+//  CODE EXAMPLES USED FROM TUTORIAL AT: https://www.appcoda.com/
 
 import UIKit
 
@@ -34,3 +34,5 @@ class MementoViewController: UIViewController {
         user.show()
     }
 }
+
+

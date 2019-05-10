@@ -304,7 +304,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jQ8-xf-vqR"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Memento Pattern" id="nYe-aX-hfA"/>
+                    <navigationItem key="navigationItem" title="Memento Pattern" id="nYe-aX-hfA">
+                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="hJp-3G-kdY">
+                            <connections>
+                                <segue destination="BFc-zV-kai" kind="show" id="nQ9-UZ-uj7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="age" destination="Any-f1-boK" id="vTs-Hb-cNy"/>
                         <outlet property="firstName" destination="yCj-aN-RrM" id="7Hz-wD-xTJ"/>
@@ -314,6 +320,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aMI-tN-VTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3369.5652173913045" y="131.91964285714286"/>
+        </scene>
+        <!--Facade Pattern-->
+        <scene sceneID="fMR-oS-Wzr">
+            <objects>
+                <viewController id="BFc-zV-kai" customClass="FacadeViewController" customModule="DesignPatterns" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lj7-HU-az4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save text file to Documents" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhe-Cv-onW">
+                                <rect key="frame" x="70.5" y="98" width="273.5" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5tc-ht-FdX">
+                                <rect key="frame" x="30" y="135" width="354" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omd-Yq-Agg">
+                                <rect key="frame" x="110" y="218" width="194" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="SAVE TEXT INTO FILE"/>
+                                <connections>
+                                    <action selector="saveText:" destination="BFc-zV-kai" eventType="touchUpInside" id="IDY-bH-Tov"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSP-Mu-Rri">
+                                <rect key="frame" x="150" y="259" width="114" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="DELETE FILE"/>
+                                <connections>
+                                    <action selector="deleteFile:" destination="BFc-zV-kai" eventType="touchUpInside" id="Svo-WJ-W9v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4L3-tJ-QzV">
+                                <rect key="frame" x="160" y="300" width="94" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="READ FILE"/>
+                                <connections>
+                                    <action selector="readFile:" destination="BFc-zV-kai" eventType="touchUpInside" id="wCk-91-5X0"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lZO-4Z-QKg">
+                                <rect key="frame" x="30" y="522" width="354" height="310"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="tHh-pH-afU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter headline" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h9v-so-GcD">
+                                <rect key="frame" x="30" y="173" width="354" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4L3-tJ-QzV" firstAttribute="top" secondItem="SSP-Mu-Rri" secondAttribute="bottom" constant="5" id="4mV-MX-GwF"/>
+                            <constraint firstItem="5tc-ht-FdX" firstAttribute="leading" secondItem="rmR-to-JDL" secondAttribute="leading" constant="30" id="5ty-VC-Db9"/>
+                            <constraint firstItem="hhe-Cv-onW" firstAttribute="centerX" secondItem="Lj7-HU-az4" secondAttribute="centerX" id="A4d-5f-6IN"/>
+                            <constraint firstItem="SSP-Mu-Rri" firstAttribute="top" secondItem="omd-Yq-Agg" secondAttribute="bottom" constant="5" id="DS2-PA-Oxj"/>
+                            <constraint firstItem="rmR-to-JDL" firstAttribute="bottom" secondItem="lZO-4Z-QKg" secondAttribute="bottom" constant="30" id="Gje-tJ-wB6"/>
+                            <constraint firstItem="omd-Yq-Agg" firstAttribute="top" secondItem="h9v-so-GcD" secondAttribute="bottom" constant="15" id="Pde-UR-CLi"/>
+                            <constraint firstItem="5tc-ht-FdX" firstAttribute="top" secondItem="hhe-Cv-onW" secondAttribute="bottom" constant="10" id="T7E-ZR-Gy6"/>
+                            <constraint firstItem="rmR-to-JDL" firstAttribute="trailing" secondItem="5tc-ht-FdX" secondAttribute="trailing" constant="30" id="Uje-BO-dFf"/>
+                            <constraint firstItem="SSP-Mu-Rri" firstAttribute="centerX" secondItem="Lj7-HU-az4" secondAttribute="centerX" id="ZXe-A2-QTC"/>
+                            <constraint firstItem="omd-Yq-Agg" firstAttribute="centerX" secondItem="Lj7-HU-az4" secondAttribute="centerX" id="dYH-h3-YsF"/>
+                            <constraint firstItem="4L3-tJ-QzV" firstAttribute="centerX" secondItem="Lj7-HU-az4" secondAttribute="centerX" id="ejl-4l-9a0"/>
+                            <constraint firstItem="rmR-to-JDL" firstAttribute="trailing" secondItem="lZO-4Z-QKg" secondAttribute="trailing" constant="30" id="gOY-hn-F6s"/>
+                            <constraint firstItem="lZO-4Z-QKg" firstAttribute="leading" secondItem="rmR-to-JDL" secondAttribute="leading" constant="30" id="ge2-SC-IGp"/>
+                            <constraint firstItem="h9v-so-GcD" firstAttribute="leading" secondItem="rmR-to-JDL" secondAttribute="leading" constant="30" id="hWl-op-24u"/>
+                            <constraint firstItem="rmR-to-JDL" firstAttribute="trailing" secondItem="h9v-so-GcD" secondAttribute="trailing" constant="30" id="hoq-a2-87g"/>
+                            <constraint firstItem="hhe-Cv-onW" firstAttribute="top" secondItem="rmR-to-JDL" secondAttribute="top" constant="10" id="l7X-q4-GSK"/>
+                            <constraint firstItem="h9v-so-GcD" firstAttribute="top" secondItem="5tc-ht-FdX" secondAttribute="bottom" constant="8" id="o75-8i-ba4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rmR-to-JDL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Facade Pattern" id="e3B-xk-Aa7"/>
+                    <connections>
+                        <outlet property="headlineField" destination="h9v-so-GcD" id="ctK-CH-Rex"/>
+                        <outlet property="textField" destination="5tc-ht-FdX" id="61F-A9-w2k"/>
+                        <outlet property="textView" destination="lZO-4Z-QKg" id="RFh-3p-5hS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IcH-7I-Hf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4192.753623188406" y="131.91964285714286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gNj-4n-fwN">

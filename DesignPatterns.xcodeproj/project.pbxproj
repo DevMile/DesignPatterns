@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231C030A2285DF78006582CC /* FileSystemInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231C03092285DF78006582CC /* FileSystemInterface.swift */; };
 		234EF924227B680C0027A677 /* SingletonPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EF923227B680C0027A677 /* SingletonPatternViewController.swift */; };
 		234EF926227B684E0027A677 /* PreferencesSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EF925227B684E0027A677 /* PreferencesSingleton.swift */; };
 		2387E10D22836F4D006D8242 /* MementoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2387E10C22836F4D006D8242 /* MementoProtocol.swift */; };
@@ -22,9 +23,12 @@
 		23F513F922822A8C008B84C6 /* ObserverPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513F822822A8C008B84C6 /* ObserverPatternViewController.swift */; };
 		23F513FB228230DD008B84C6 /* NetworkConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513FA228230DD008B84C6 /* NetworkConnectionHandler.swift */; };
 		23F513FD2282348B008B84C6 /* ObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513FC2282348B008B84C6 /* ObservedObject.swift */; };
+		23F8B9B32285E20F003B14CF /* iOSAppFileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8B9B22285E20F003B14CF /* iOSAppFileSystem.swift */; };
+		23F8B9B52285E367003B14CF /* FacadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F8B9B42285E367003B14CF /* FacadeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		231C03092285DF78006582CC /* FileSystemInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemInterface.swift; sourceTree = "<group>"; };
 		234EF923227B680C0027A677 /* SingletonPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonPatternViewController.swift; sourceTree = "<group>"; };
 		234EF925227B684E0027A677 /* PreferencesSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesSingleton.swift; sourceTree = "<group>"; };
 		2387E10C22836F4D006D8242 /* MementoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoProtocol.swift; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		23F513F822822A8C008B84C6 /* ObserverPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPatternViewController.swift; sourceTree = "<group>"; };
 		23F513FA228230DD008B84C6 /* NetworkConnectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionHandler.swift; sourceTree = "<group>"; };
 		23F513FC2282348B008B84C6 /* ObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObject.swift; sourceTree = "<group>"; };
+		23F8B9B22285E20F003B14CF /* iOSAppFileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppFileSystem.swift; sourceTree = "<group>"; };
+		23F8B9B42285E367003B14CF /* FacadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		231C03082285DF40006582CC /* Facade Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				231C03092285DF78006582CC /* FileSystemInterface.swift */,
+				23F8B9B22285E20F003B14CF /* iOSAppFileSystem.swift */,
+				23F8B9B42285E367003B14CF /* FacadeViewController.swift */,
+			);
+			path = "Facade Pattern";
+			sourceTree = "<group>";
+		};
 		234EF922227B67DD0027A677 /* Singleton Pattern */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +128,7 @@
 		23EA16092279E4CC00A52600 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				231C03082285DF40006582CC /* Facade Pattern */,
 				2387E10B22836F35006D8242 /* Memento Pattern */,
 				23F513F522822A56008B84C6 /* Observer Pattern */,
 				234EF922227B67DD0027A677 /* Singleton Pattern */,
@@ -206,7 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				23F513F722822A6D008B84C6 /* ObserverInterface.swift in Sources */,
+				23F8B9B52285E367003B14CF /* FacadeViewController.swift in Sources */,
 				23F513FB228230DD008B84C6 /* NetworkConnectionHandler.swift in Sources */,
+				23F8B9B32285E20F003B14CF /* iOSAppFileSystem.swift in Sources */,
 				23F513FD2282348B008B84C6 /* ObservedObject.swift in Sources */,
 				23F513F922822A8C008B84C6 /* ObserverPatternViewController.swift in Sources */,
 				23EA161D2279E6CD00A52600 /* ShapeFactory.swift in Sources */,
@@ -215,6 +234,7 @@
 				23EA160B2279E4CC00A52600 /* AppDelegate.swift in Sources */,
 				234EF926227B684E0027A677 /* PreferencesSingleton.swift in Sources */,
 				234EF924227B680C0027A677 /* SingletonPatternViewController.swift in Sources */,
+				231C030A2285DF78006582CC /* FileSystemInterface.swift in Sources */,
 				2387E10D22836F4D006D8242 /* MementoProtocol.swift in Sources */,
 				2387E10F228371DA006D8242 /* User.swift in Sources */,
 			);
