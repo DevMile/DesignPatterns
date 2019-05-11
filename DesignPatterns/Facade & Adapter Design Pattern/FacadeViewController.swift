@@ -19,6 +19,26 @@ class FacadeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         documentsDirectory.list()
+        
+        //MARK: - ADAPTER PATTERN EXAMPLE
+        
+        // A dedicated adapter approach
+        let iOSfile = iOSFile(fileName: "myFile.txt")
+        print("ADAPTER PATTERN PRINT RESULTS:\n" + "----------------------------" + "\n" + "File path in Documents:\n" + iOSfile.fullPathInDocuments + "\n" + "Documents folder path:\n" + iOSfile.documentsStringPath + "\n\n" + "File path in Temporary folder:\n" + iOSfile.fullPathInTemporary + "\n" + "Temporary folder path:\n" + iOSfile.temporaryStringPath + "\n")
+        // We STILL have access to URLs through protocol DirectoryNames.
+        print("------------------" + "\n" + "URLs:\n")
+        print(iOSfile.documentsDirectoryURL())
+        print(iOSfile.tempDirectoryURL())
+        
+        // Protocol-oriented approach
+        print("\n" + "------------------" + "\n" + "ADAPTER PATTERN PROTOCOL-ORIENTED APPROACH PRINT RESULTS:\n")
+        let appFileDocumentsDirectoryPaths = AppDirectoryAndFileStringPathNames(fileName: "newFile.txt", workingDirectory: .Documents)
+        print("File path in Documents:\n" + appFileDocumentsDirectoryPaths.fullPath() + "\n" + "Documents folder path:\n" + appFileDocumentsDirectoryPaths.documentsDirectoryStringPath() + "\n")
+        print("URL path:")
+        print(appFileDocumentsDirectoryPaths.documentsDirectoryURL())
+        
+        print("\n" + "------------------" + "\n" + "END ADAPTER PATTERN\n" + "------------------" + "\n")
+        // END ADAPTER PATTERN
     }
     
     @IBAction func saveText(_ sender: Any) {
@@ -44,5 +64,4 @@ class FacadeViewController: UIViewController {
             textView.text = read
         }
     }
-
 }

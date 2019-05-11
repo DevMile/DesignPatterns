@@ -321,7 +321,7 @@
             </objects>
             <point key="canvasLocation" x="3369.5652173913045" y="131.91964285714286"/>
         </scene>
-        <!--Facade Pattern-->
+        <!--Facade & Adapter Pattern-->
         <scene sceneID="fMR-oS-Wzr">
             <objects>
                 <viewController id="BFc-zV-kai" customClass="FacadeViewController" customModule="DesignPatterns" customModuleProvider="target" sceneMemberID="viewController">
@@ -403,7 +403,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rmR-to-JDL"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Facade Pattern" id="e3B-xk-Aa7"/>
+                    <navigationItem key="navigationItem" title="Facade &amp; Adapter Pattern" id="e3B-xk-Aa7"/>
                     <connections>
                         <outlet property="headlineField" destination="h9v-so-GcD" id="ctK-CH-Rex"/>
                         <outlet property="textField" destination="5tc-ht-FdX" id="61F-A9-w2k"/>

@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum AppDirectories : String {
+enum AppDirectories: String {
     case Documents = "Documents"
     case Inbox = "Inbox"
     case Library = "Library"
@@ -29,7 +29,8 @@ protocol AppDirectoryNames {
     
     func buildFullPath(forFileName name: String, inDirectory directory: AppDirectories) -> URL
     
-} // end protocol AppDirectoryNames
+}
+
 extension AppDirectoryNames {
     
     func documentsDirectoryURL() -> URL {

@@ -19,6 +19,7 @@
 		23EA16122279E4CD00A52600 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23EA16112279E4CD00A52600 /* Assets.xcassets */; };
 		23EA16152279E4CD00A52600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EA16132279E4CD00A52600 /* LaunchScreen.storyboard */; };
 		23EA161D2279E6CD00A52600 /* ShapeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA161C2279E6CD00A52600 /* ShapeFactory.swift */; };
+		23F2E57922872F37003B3217 /* AdapterPatternExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F2E57822872F37003B3217 /* AdapterPatternExample.swift */; };
 		23F513F722822A6D008B84C6 /* ObserverInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513F622822A6D008B84C6 /* ObserverInterface.swift */; };
 		23F513F922822A8C008B84C6 /* ObserverPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513F822822A8C008B84C6 /* ObserverPatternViewController.swift */; };
 		23F513FB228230DD008B84C6 /* NetworkConnectionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F513FA228230DD008B84C6 /* NetworkConnectionHandler.swift */; };
@@ -42,6 +43,7 @@
 		23EA16142279E4CD00A52600 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23EA16162279E4CD00A52600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23EA161C2279E6CD00A52600 /* ShapeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeFactory.swift; sourceTree = "<group>"; };
+		23F2E57822872F37003B3217 /* AdapterPatternExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterPatternExample.swift; sourceTree = "<group>"; };
 		23F513F622822A6D008B84C6 /* ObserverInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverInterface.swift; sourceTree = "<group>"; };
 		23F513F822822A8C008B84C6 /* ObserverPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverPatternViewController.swift; sourceTree = "<group>"; };
 		23F513FA228230DD008B84C6 /* NetworkConnectionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConnectionHandler.swift; sourceTree = "<group>"; };
@@ -61,33 +63,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		231C03082285DF40006582CC /* Facade Pattern */ = {
+		231C03082285DF40006582CC /* Facade & Adapter Design Pattern */ = {
 			isa = PBXGroup;
 			children = (
 				231C03092285DF78006582CC /* FileSystemInterface.swift */,
 				23F8B9B22285E20F003B14CF /* iOSAppFileSystem.swift */,
 				23F8B9B42285E367003B14CF /* FacadeViewController.swift */,
+				23F2E57822872F37003B3217 /* AdapterPatternExample.swift */,
 			);
-			path = "Facade Pattern";
+			path = "Facade & Adapter Design Pattern";
 			sourceTree = "<group>";
 		};
-		234EF922227B67DD0027A677 /* Singleton Pattern */ = {
+		234EF922227B67DD0027A677 /* Singleton Design Pattern */ = {
 			isa = PBXGroup;
 			children = (
 				234EF925227B684E0027A677 /* PreferencesSingleton.swift */,
 				234EF923227B680C0027A677 /* SingletonPatternViewController.swift */,
 			);
-			path = "Singleton Pattern";
+			path = "Singleton Design Pattern";
 			sourceTree = "<group>";
 		};
-		2387E10B22836F35006D8242 /* Memento Pattern */ = {
+		2387E10B22836F35006D8242 /* Memento Design Pattern */ = {
 			isa = PBXGroup;
 			children = (
 				2387E10C22836F4D006D8242 /* MementoProtocol.swift */,
 				2387E10E228371DA006D8242 /* User.swift */,
 				2387E11022837C41006D8242 /* MementoViewController.swift */,
 			);
-			path = "Memento Pattern";
+			path = "Memento Design Pattern";
 			sourceTree = "<group>";
 		};
 		23AA781A227A4C6100A1F486 /* Factory Design Pattern */ = {
@@ -128,10 +131,10 @@
 		23EA16092279E4CC00A52600 /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				231C03082285DF40006582CC /* Facade Pattern */,
-				2387E10B22836F35006D8242 /* Memento Pattern */,
-				23F513F522822A56008B84C6 /* Observer Pattern */,
-				234EF922227B67DD0027A677 /* Singleton Pattern */,
+				231C03082285DF40006582CC /* Facade & Adapter Design Pattern */,
+				2387E10B22836F35006D8242 /* Memento Design Pattern */,
+				23F513F522822A56008B84C6 /* Observer Design Pattern */,
+				234EF922227B67DD0027A677 /* Singleton Design Pattern */,
 				23AA781A227A4C6100A1F486 /* Factory Design Pattern */,
 				23EA160E2279E4CC00A52600 /* Main.storyboard */,
 				23AA781B227A4C7D00A1F486 /* SupportingFiles */,
@@ -140,7 +143,7 @@
 			path = DesignPatterns;
 			sourceTree = "<group>";
 		};
-		23F513F522822A56008B84C6 /* Observer Pattern */ = {
+		23F513F522822A56008B84C6 /* Observer Design Pattern */ = {
 			isa = PBXGroup;
 			children = (
 				23F513F622822A6D008B84C6 /* ObserverInterface.swift */,
@@ -148,7 +151,7 @@
 				23F513FA228230DD008B84C6 /* NetworkConnectionHandler.swift */,
 				23F513F822822A8C008B84C6 /* ObserverPatternViewController.swift */,
 			);
-			path = "Observer Pattern";
+			path = "Observer Design Pattern";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23F513F722822A6D008B84C6 /* ObserverInterface.swift in Sources */,
+				23F2E57922872F37003B3217 /* AdapterPatternExample.swift in Sources */,
 				23F8B9B52285E367003B14CF /* FacadeViewController.swift in Sources */,
 				23F513FB228230DD008B84C6 /* NetworkConnectionHandler.swift in Sources */,
 				23F8B9B32285E20F003B14CF /* iOSAppFileSystem.swift in Sources */,

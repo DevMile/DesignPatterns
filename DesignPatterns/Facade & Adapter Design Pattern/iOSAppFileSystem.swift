@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct iOSAppFileSystemDirectory : AppFileManipulation, AppFileStatusChecking, AppFileSystemMetaData {
+struct iOSAppFileSystemDirectory: AppFileManipulation, AppFileStatusChecking, AppFileSystemMetaData {
     
     
     let workingDirectory: AppDirectories
